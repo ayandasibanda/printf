@@ -10,7 +10,7 @@
  */
 static int print_char(char c)
 {
-	putchar(c);
+	_putchar(c);
 	return (1);
 }
 
