@@ -8,7 +8,7 @@
  *
  * Return: The number of characters printed
  */
-static int print_char(char c)
+int print_char(char c)
 {
 	_putchar(c);
 	return (1);
@@ -20,7 +20,7 @@ static int print_char(char c)
  *
  * Return: The number of characters printed
  */
-static int print_string(char *s)
+int print_string(char *s)
 {
 	int count = 0;
 
@@ -42,11 +42,11 @@ static int print_string(char *s)
  */
 int _printf(const char *format, ...)
 {
+	int count = 0; /* Counts the number of characters printed */
+
 	va_list args;
 
 	va_start(args, format);
-
-	int count = 0; /* Counts the number of characters printed */
 
 	while (*format != '\0')
 	{
